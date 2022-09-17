@@ -2,7 +2,7 @@
 // if both numbers are the same return just one number
 // Find the smaller number and incrementally step up. adding the step to the sum
 // return the sum
-
+//
 function getSum( a,b )
 {
   if(a === b) return a;
