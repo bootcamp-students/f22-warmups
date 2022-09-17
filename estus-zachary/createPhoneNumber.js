@@ -1,3 +1,6 @@
+// Catanate the numbers to a string.
+// Count helps me keep track and add the format for numbers in the right place
+
 function createPhoneNumber(numbers){
   let phoneStr = '(';
   let char =0; 
