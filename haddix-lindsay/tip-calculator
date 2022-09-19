@@ -1,10 +1,19 @@
+//PSEUDOCODE
+
+//1. create tip variable set to zero
+
 function calculateTip(amount, rating) {
   var tip = 0;
   rating = rating.toLowerCase();
-  
+
+//2. IF rating = "excellent", tip amount = *.2 
+
   if (rating === "excellent") {
     tip = amount * .2;
   }
+  
+//ELSE (repeat above for each rating)
+
   else if (rating === "great") {
     tip = amount * .15;
   }
@@ -17,10 +26,14 @@ function calculateTip(amount, rating) {
   else if (rating === "terrible") {
     tip = amount * 0;
   }
+  
+  //ELSE return "rating not recognized"
+  
   else {
     return "Rating not recognised";
   }
   
+ //3. return tip with round up
   tip = Math.ceil(tip);
   return tip;
 }
