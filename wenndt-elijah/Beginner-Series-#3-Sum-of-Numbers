@@ -1,0 +1,14 @@
+//find the sum of integars formula
+//S = n(a + l)/2
+//a being the first of the number range
+//b (l in this case) is the last of the number range
+//find the minimum/find the maximum
+//need the full range of a and full range of b
+//input math.min and math.max for both
+function getSum( a,b )
+{
+  var min = Math.min(a,b) 
+  var max = Math.max(a,b)
+  
+  return ((max-min + 1) * (max + min))/2
+}
