@@ -1,0 +1,4 @@
+function calculateTip(amount, rating)
+/*
+
+*/
