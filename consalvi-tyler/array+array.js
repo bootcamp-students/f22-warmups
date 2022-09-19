@@ -8,3 +8,16 @@ add full sums of each array
 return a number
     return finalSum
 */
+
+function arrayPlusArray(arr1, arr2) {
+    let arr1Sum = 0;
+    let arr2Sum = 0;
+    for (let nums of arr1) {
+      arr1Sum += nums
+    };
+    for (let nums2 of arr2) {
+      arr2Sum += nums2
+    };
+    let finalSum = (arr1Sum + arr2Sum);
+    return finalSum;
+  };
