@@ -1,9 +1,9 @@
 //PSEUDOCODE
 //1. create tip variable set to zero
 //2. IF rating = "excellent", tip amount = *.2 
-//////ELSE (repeat aove for each rating)
+//////ELSE (repeat above for each rating)
 //////ELSE return "rating not recognized"
-//3. calculate tip
+//3. calculate tip; round up 
 //4. return tip
 
 
