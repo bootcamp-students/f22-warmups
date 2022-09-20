@@ -1,0 +1,6 @@
+function isDivisible(n, x, y) {
+  return (n%x===0 && n%y===0)
+}
+// using modulo % we will check if there is a remainder for x and y
+// also use if else statement with two conditions to check for
+// return true if n is divisble by x AND y with 0 as the check
