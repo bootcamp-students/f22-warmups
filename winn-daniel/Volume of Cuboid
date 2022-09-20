@@ -1,0 +1,15 @@
+//Volume of Cuboid
+//Josh and I 
+
+//Let volume equal (length*width*height)
+//return volume of cuboid
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    console.log(length);
+    console.log(width);
+    console.log(height);
+    let volume = (length*width*height);
+    console.log(volume);
+    return volume;
+  }
+}
