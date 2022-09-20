@@ -36,19 +36,19 @@ Note: a and b are not ordered!
 
 function getSum (a, b) {
     let varMin = Math.min(a, b);
-    let varMax = Math.max(a, b);
+    let varMax = Math.max(a, b);  
+    let sum = 0;
 
     if (varMin === varMax) {
-        return(a || b);
+        return(a);
     }
+    
     else {
-        do {
-            (varMin += (varMin++));
-            console.log(varMin);
-        }
-
-        while (
-            (varMin <= varMax)
-        );
+      while (varMin <= varMax){
+        (sum += varMin);
+        varMin++;
+      }
+    
     }
+  return(sum);
 }

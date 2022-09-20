@@ -1,4 +1,2 @@
 function calculateTip(amount, rating)
-/*
-
-*/
+//
