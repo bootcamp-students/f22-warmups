@@ -1,0 +1,8 @@
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    // your code here
+    //multiply deminsions
+    var volume = length * width * height
+    return volume
+  }
+}
