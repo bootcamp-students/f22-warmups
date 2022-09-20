@@ -1,0 +1,17 @@
+//PSEUDOCODE
+//1. IF n is divisble by x 
+> THEN return true
+//2. IF y is divisible by y
+> THEN return true
+//3. IF n is divisible by x AND y
+> THEN return true
+//4. IF n is divisible by one but not the other
+> THEN return false
+
+
+function isDivisible(n, x, y) {
+if ((n % x) == 0 && (n % y) == 0){
+  return true;}
+  else {return false;
+       }
+}
