@@ -1,0 +1,11 @@
+function isDivisible(n, x, y) {
+
+  //if n is divisible by x and if n is divisible by y, return true
+  
+ if ((n % x) == 0 && (n % y) == 0){
+  return true;}
+  
+  //if n is not divisible by both x and ya, return false
+   else {return false;
+        }
+               }
