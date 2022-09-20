@@ -33,7 +33,7 @@ function calculateTip(amount, rating) {
 // CREATE else statement to capture any null value 
   
   else  {
-    return "Rating not recognized";
+    return "Rating not recognised";
   }
   
   tip = Math.ceil(tip);
