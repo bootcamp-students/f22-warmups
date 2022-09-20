@@ -30,11 +30,15 @@ function calculateTip(amount, rating) {
     tip = amount * .20;
   }
   
-// CREATE else statement to capture any null value  
+// CREATE else statement to capture any null value 
+  
   else  {
-    return "Rating not recognized"
+    return "Rating not recognized";
   }
   
   tip = Math.ceil(tip);
   return tip;
 }
+
+// TEST
+  console.log(calculateTip(10, ""));
