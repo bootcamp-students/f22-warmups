@@ -7,7 +7,7 @@ poor = 0.05
 good = 0.1
 great = 0.15
 excellent = 0.2
-
+**Rating not recognised**
 return (tip * amount)
 */
 
