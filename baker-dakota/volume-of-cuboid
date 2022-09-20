@@ -1,0 +1,11 @@
+//find formula for volue of cuboid
+//assign formula to variable 
+//return variable
+
+
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+  let volume = (length * width * height);
+    return volume;
+  }
+}
