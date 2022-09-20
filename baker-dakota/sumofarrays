@@ -1,0 +1,13 @@
+//define array 1
+//define array 2 
+//concat to combine arrays
+//sum of integers in array
+//return sum of 2 arrays
+function arrayPlusArray(arr1, arr2) {
+const arr3 = arr1.concat(arr2);
+const total = arr3.reduce(function(prev,curr){
+  return prev + curr;
+}, 0);
+  return total;
+
+}
