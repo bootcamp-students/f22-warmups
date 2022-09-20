@@ -1,0 +1,18 @@
+//create function
+//IF N is divisible by x
+//RETURN true
+//else return false
+//IF N is divisible by y
+//RETURN true
+//else return false
+
+function isDivisible(n, x, y) {
+  
+  if ((n % x === 0) && (n % y === 0)){
+    return true;
+  }
+  else {
+    return false;
+  }
+    
+}
