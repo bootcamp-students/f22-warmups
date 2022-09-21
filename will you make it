@@ -1,0 +1,11 @@
+// if distance to pump is less that total miles able to travel
+// if 
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+//   let mpg = 25;
+  if(distanceToPump/fuelLeft <= mpg){
+    return  true;
+  }
+  else
+    return false;
+};
