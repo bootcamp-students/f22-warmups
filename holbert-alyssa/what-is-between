@@ -1,0 +1,22 @@
+//PSEUDOCODE
+//let a = lowEnd
+//let b = highEnd
+//create variable for array (list = [])
+//Add 1 to a until b to generate integers between
+//Push each new integer into array
+//return array
+
+//END
+
+
+function between(a, b) {
+  var lowEnd = a;
+  var highEnd = b;
+  var list = [];
+  
+  for (var i = lowEnd; i <= highEnd; i++) {
+    list.push(i);
+  }
+  return list;
+  }
+  
