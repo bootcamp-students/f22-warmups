@@ -1,0 +1,10 @@
+//multiply mpg and fuelleft
+//check if distancetopump >= sum of mpg and fuelleft
+//if >= return true
+//else return false
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+let distanceLeft = mpg * fuelLeft;
+  if (distanceLeft >= distanceToPump) {
+    return true;
+  } else {return false}
+};
