@@ -1,0 +1,12 @@
+//a < b
+//empty array
+//for loop starting at a incrementing by 1 pushing each integer to the array until b
+//push each integer to array
+//return array
+function between(a, b) {
+const arr = [];
+for (let i = a; i <= b; i++) {
+   arr.push(i);
+}
+  return arr;
+}
