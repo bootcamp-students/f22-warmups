@@ -1,0 +1,22 @@
+//pseudocode
+
+
+// If a is less than b make a and b variables (lowEnd and highEnd)
+
+function between(a, b) {
+
+  var lowEnd = a;
+  var highEnd = b;
+  
+// make variable for array
+
+  var list = [];
+  
+  
+//start with a and increment until you get to b and put integers in array
+
+  for (var i = lowEnd; i <= highEnd; i++) {
+    list.push(i);
+}
+  return list;
+}
