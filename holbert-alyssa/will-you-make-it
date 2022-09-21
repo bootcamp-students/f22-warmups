@@ -1,0 +1,13 @@
+//PSEUDOCODE
+//1. IF miles per gallon * fuelLeft >= distance to pump
+//THEN return true (able to make it)
+//ELSE return false (not able to make it)
+
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  // TODO  
+    if (mpg * fuelLeft >= distanceToPump)
+      {return true;}
+    else {return false;}
+    
+  }
