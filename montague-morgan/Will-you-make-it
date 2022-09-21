@@ -1,0 +1,12 @@
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {return (mpg*fuelLeft >= distanceToPump)};
+  // TODO
+ 
+
+// Need enough gas to get to the pump
+// mpg and fuel left need to be greater or equal to the distance to pump
+// Use if statement, if fuelleft times mpg is greater than distance to pump, true if not false
+//
+// First Attempt
+//   if (fuelLeft * mpg >= distanceToPump){
+//     return true;
+//   } else {return false};
