@@ -1,0 +1,23 @@
+// create new array to populate
+// let a be min value in array
+// let b be max value in array
+// if an integer is
+
+
+
+function between(a, b) {
+let distance = (b-a-1);
+let result = [];
+result[0]= a;
+a++;
+for (let i=1; i<=distance+1; i++){
+result[i]=a;
+a++;
+  }
+  
+  return result;
+}
+
+//   newArray = [];
+//   let i= a; i<=b; i++;
+//   return newArray.push;
