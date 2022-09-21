@@ -1,0 +1,18 @@
+Dakota and I
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  console.log(distanceToPump);
+  console.log(mpg);
+  console.log(fuelLeft);
+  // TODO
+  //dis = mpg * fuelleft
+  //if distanceToPump = dis 
+  //then return true
+  //else return flase
+  let dis= (mpg * fuelLeft);
+  if (dis >= distanceToPump){
+    return true;
+  }else{
+    return false;
+  }
+};
