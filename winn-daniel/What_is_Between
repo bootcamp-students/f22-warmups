@@ -1,0 +1,15 @@
+Dakota and I
+
+function between(a, b) {
+  // your code here
+  //for a<b
+  //1+a until a=b
+  //after adding to a populate in an array
+  //return array
+  const array=[];
+  for (let i=a; i<=b ; i++) {
+   array.push(i); 
+    
+  }
+  return array;
+}
