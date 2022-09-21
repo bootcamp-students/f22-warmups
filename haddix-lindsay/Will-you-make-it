@@ -1,0 +1,10 @@
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+
+  // pseudocode
+  // If fuel efficiency times the amount of fuel left is greater or less than the number of miles left to get to the gas station return true.
+  // Else return false.
+  
+    if  (mpg * fuelLeft >= distanceToPump) {
+    return true;}
+    else {return false;}
+  }
