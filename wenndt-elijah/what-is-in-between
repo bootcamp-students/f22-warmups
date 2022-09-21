@@ -1,0 +1,17 @@
+//start
+//set up a blank array
+//allow array to take input
+//create for loop to incriment through array
+//push results to array
+//return the array
+
+function between(a, b) {
+  let array = []
+  for (let i = a; i <= b; i++) {
+    
+    array.push(i)
+    
+    
+  }
+  return array
+}
