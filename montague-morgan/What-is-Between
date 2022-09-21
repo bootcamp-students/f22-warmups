@@ -1,0 +1,13 @@
+// the paramiters are a to b
+function between(a, b) {
+  // create an empty list
+  let myArray = [];
+  // let i equal each number to be counted
+  // set up a loop and count up from a till b (including b)
+  for (let i = a; i <= b; i++){
+    myArray.push(i)
+  };
+  // place each number counted onto a list, return the list
+  console.log(myArray)
+  return myArray
+  }
