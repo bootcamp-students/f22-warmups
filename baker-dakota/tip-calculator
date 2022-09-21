@@ -1,0 +1,32 @@
+//Take bot variables "amount" and "rating"
+//Tell all "rating" strings to be lower case
+//If rating equals "string === ("terrible=0", "poor=.05", "good=0.1", "great=.15", "excellent=.20")
+//let Tip = (amount*tip%)
+//return tip amount 
+function calculateTip(amount, rating) {
+ rating = rating.toLowerCase();
+  console.log("start!");
+  console.log(rating);
+  let tip = 0;
+  
+  if (rating === "terrible") {
+    let tip = .00;
+    console.log(rating);
+  }
+  else if(rating === "poor") {
+     tip = .05;
+  }
+  else if(rating === "good") {
+     tip = .10;
+  }
+  else if(rating === "great") {
+     tip = .15;
+  }
+  else if(rating === "excellent") {
+     tip = .20;
+  }
+  else return ("Rating not recognised")
+  
+  tip = Math.ceil(amount * tip);
+  return tip;
+  }
