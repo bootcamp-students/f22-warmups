@@ -1,0 +1,14 @@
+//calculate the ratio of distanceToPump to fuelLeft
+//IF (solution of ration) <= mpg return true
+//else return false
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  let solution = (distanceToPump/fuelLeft)
+  console.log(solution)
+  if (solution <= mpg) {
+    return true
+  }
+  else {
+    return false
+  }
+};
