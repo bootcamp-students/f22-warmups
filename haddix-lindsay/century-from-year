@@ -1,0 +1,12 @@
+function century(year) {
+  // if year is xx yy
+  // return xx =1
+  //unless its xx00
+
+ 
+    var x = Math.floor(year / 100);
+    if (year % 100 === 0)
+        return x;
+    else
+        return x + 1;
+}
