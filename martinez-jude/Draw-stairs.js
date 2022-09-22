@@ -1,24 +1,19 @@
 function drawStairs(n) {
   
     let test = ' ';
-    let iholder = 'I';
     let nholder = '\n';
-  
-    let answer = iholder;
-    let newAnswer = answer + nholder + test;
-    let returnAnswer = iholder;
-  
+    let answer = 'I';
+    let newAnswer = '';
   for (let i = 0; i <= n; i++){
-    if (i == 0){
-      return returnAnswer;
+    if (n == 1 ){
+      return answer;
     }
-    answer = newAnswer;
-    newAnswer = test + answer;
-
-    returnAnswer = answer
-    }
-  return returnAnswer
-
+    answer = test.repeat(i) + answer + nholder;
+    newAnswer = answer + newAnswer;
+    console.log(newAnswer)
+  }
+  console.log('outside',newAnswer);
+  return newAnswer
 }
 
 // func give us the value of n
