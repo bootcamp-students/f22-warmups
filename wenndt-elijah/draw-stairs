@@ -1,0 +1,29 @@
+//define I
+//increment I by
+//take the input of n
+//use that input of n to determine how many times function runs
+//make function add a space infront of I
+///store and return I
+//add space in front of I
+//return I
+
+
+
+function drawStairs(n) {
+  let steps = "I"
+  let space = " "
+  let emptyString = ""
+ for (let i = 1; i <= n; i++) {
+    
+//     let steps = "I"
+//     let space = " "
+    
+   emptyString += space.repeat(i-1) + steps  
+   if (i != n) {
+     emptyString += "\n"
+   }
+     
+   
+   }
+   return emptyString
+}
