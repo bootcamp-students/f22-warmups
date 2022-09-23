@@ -1,8 +1,8 @@
 function between(a, b) {
     //determine what is a
-    let first = a;
+    let first = Math.min(a, b);;
     //determine what is b
-    let last = b;
+    let last = Math.max(a, b);
     //determine the newArray
     let newArray = [];
     //generate the range between a and b
