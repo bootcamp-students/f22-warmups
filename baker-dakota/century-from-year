@@ -1,0 +1,8 @@
+//year divided by 100
+//round up
+//return century;
+function century(year) {
+let century = Math.ceil(year/100);
+  console.log(century)
+  return century;
+}
