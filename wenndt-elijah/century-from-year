@@ -1,0 +1,11 @@
+//divide given year by 100
+//drop off the decimals
+//ex-because 1800 = 18th century still and 1801 = 19th century
+//round up so when it hits 1801 it will = 19th century
+
+function century(year) {
+  let calcYear = Math.ceil(year/100)
+  
+  
+  return calcYear
+}
