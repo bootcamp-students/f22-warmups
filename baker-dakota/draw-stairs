@@ -1,0 +1,12 @@
+//set var for I
+//loop i to n starting at 1 and incremeneting by one
+//line break and space repeat depending on n + 1 
+//return
+
+function drawStairs(n) {
+  let str = 'I';
+  for (let i = 1; i < n; i++){
+    str += '\n' + (' ').repeat(i) + 'I';
+  }
+  return str;
+}
