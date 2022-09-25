@@ -1,0 +1,12 @@
+// pseudocode
+
+// Divide year by 100 to get a float for the century
+// Round up float number to nearest whole integer to get the century it was in
+// Use Math.ceil method
+
+
+
+function century(year) {
+  // Finish this :)
+  return Math.ceil(year/100);
+}
