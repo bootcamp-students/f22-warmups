@@ -1,0 +1,25 @@
+function magic() {
+
+    let solution = Math.floor(Math.random() * symbol.length)
+    
+    let emptyArray = [];
+    
+    for (let i = 01; i < 100 ; i++) {
+
+        let filler = Math.floor(Math.random() * symbol.length); 
+
+        if (i % 9 === 0) {
+
+            //pushes 
+            emptyArray.push(i + ": " + symbol[solution] + '<br>');
+        }
+        else if (i % 9 !== 0) {
+            emptyArray.push(i + ": " + symbol[filler] + '<br>');  
+
+        }
+    
+    };
+    containerArray[5].header=symbol[solution]
+    containerArray[4].header=emptyArray.join('\r\n')
+    return emptyArray;
+}
