@@ -1,0 +1,26 @@
+function coinCombo (cents) {
+  // divide cents by quarters/dimes/nickels/pennies with remainders
+  // if quarters return a whole number hold that number for quarters
+  // filter the remainder through the rest of the coins until there is no more remainder
+ let change = cents;
+
+  
+ let quarters = Math.floor(cents/25);
+ change = change - (quarters*25);
+
+  
+ let dimes = Math.floor(change/10);
+ change = change - (dimes*10);
+
+  
+  let nickels = Math.floor(change/05);
+  change = change - (nickels*05);
+
+  
+  let pennies = Math.floor(change/01);
+  change = change - (pennies*01);
+
+  
+  return [pennies, nickels, dimes, quarters];
+  
+}
