@@ -1,5 +1,6 @@
 // Pseudocode
-// 
+// Take change and divide by the coin amount
+// Use Math.floor to round down
 
 
 
