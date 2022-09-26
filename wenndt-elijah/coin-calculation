@@ -1,0 +1,20 @@
+//pseudocode happened in conversation, will fill in later
+
+function coinCombo (cents) {
+  
+  let centRemainder = cents
+  let total = []
+  let quarters = Math.floor(centRemainder/25)
+  centRemainder = centRemainder-(quarters * 25)
+  
+  let dimes = Math.floor(centRemainder/10)
+  centRemainder = centRemainder-(dimes * 10)
+  
+  let nickels = Math.floor(centRemainder/5)
+  centRemainder = centRemainder-(nickels * 5)
+  
+  let pennies = Math.floor(centRemainder)
+  centRemainder = centRemainder-(pennies)
+  
+	return [pennies, nickels, dimes, quarters];
+}
