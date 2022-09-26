@@ -1,0 +1,33 @@
+//pseudocode
+//make an array with coins and their values
+//input
+//how many times do i need quarters, dimes, nickels, and pennies, in that order
+//output is those 4 numbers in an array
+
+
+function coinCombo (cents) {
+  
+  //make an array with coins and their values
+  const coinValues = [25, 10, 5, 1];
+  
+  //array for the output
+  const coins = Array(coinValues.length).fill(0);
+  
+  let currentCents = cents;
+  
+  //how many times do i need quarters, dimes, nickels, and pennies, in that order
+  for (const coin of coinValues) {
+    
+    //if there are coins left
+    while (currentCents >= coin) {
+      
+      //how many cents are left and how many times the current coins fit into the current cents
+      const remainder = currentCents % coin;
+      const increaseBy = (currentCents - remainder) / coin;
+      currentCents = currentCents % coin;
+      const index = coinValues.length - 1 - coinValues.indexOf(coin);
+      coins[index] += increaseBy;
+    }
+  }
+	return coins;
+}
