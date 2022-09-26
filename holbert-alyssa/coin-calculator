@@ -1,0 +1,29 @@
+function coinCombo (cents) {
+  
+  const values = [25, 10, 5, 1];
+  
+  const coins = Array(values.length).fill(0);
+  
+  let currentCents = cents;
+  
+  for (const coin of values){
+    while (currentCents >= coin) {
+      const remainder = currentCents % coin;
+      const increaseBy = (currentCents - remainder) / coin;
+      currentCents = currentCents % coin;
+      const index = values.length - 1 - values.indexOf(coin);
+      coins[index] += increaseBy;
+    }
+  }
+  
+	return coins;
+}
+
+
+//PSEUDOCODE
+//let pennies = 00.01
+//let nickels = 00.05
+//let dimes = 00.10
+//let quarters = 00.25
+//determine FIRST how many quarters, then calculate the ramainder of cents to determine amount of dimes, nickels, pennies
+//
