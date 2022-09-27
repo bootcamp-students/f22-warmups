@@ -1,25 +1,20 @@
-function magic() {
-
-    let solution = Math.floor(Math.random() * symbol.length)
-    
-    let emptyArray = [];
-    
-    for (let i = 01; i < 100 ; i++) {
-
-        let filler = Math.floor(Math.random() * symbol.length); 
-
-        if (i % 9 === 0) {
-
-            //pushes 
-            emptyArray.push(i + ": " + symbol[solution] + '<br>');
-        }
-        else if (i % 9 !== 0) {
-            emptyArray.push(i + ": " + symbol[filler] + '<br>');  
-
-        }
-    
-    };
-    containerArray[5].header=symbol[solution]
-    containerArray[4].header=emptyArray.join('\r\n')
-    return emptyArray;
+function drawStairs(n) {
+    let space = ' ';
+    let iString = 'I';
+    let nholder = '\n';
+    let answer = '';
+  for (let i = 1; i <= n; i++){
+    if (n > i ){
+      answer = answer + iString + nholder + space.repeat(i);   
+  } else if (i == n){
+    answer = answer + iString;
+  }
 }
+return answer;
+
+
+// For this we need to make stairs using repeating I and spaces.
+// adding space, iString, and nHolder looping through a for loop will add a space I and the a line break.
+// for the first one we need a statement to just put I
+
+
