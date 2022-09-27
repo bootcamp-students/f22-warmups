@@ -1,0 +1,32 @@
+function absentVowel(x){
+  x = x.toLowerCase(x)
+  console.log(x)
+  let vowel = ['a', 'e', 'i', 'o', 'u' ]
+  for( let i of vowel){
+    if(!x.includes(i)){
+     return vowel.indexOf(i)
+    }
+  }
+}
+
+// we know each line has a only one vowel missing
+// first to lower case
+// set vowel as an array []
+// create a for loop to check for each letter
+// set a condition to say if array doesn't include a letter return that vowel as a zero
+
+
+// first attempt
+// let y = x.toLowerCase(x)
+// console.log(y)
+//   let a = y.includes('a')
+//   let e = y.includes('e')
+//   let i = y.includes('i')
+//   let o = y.includes('o')
+//   let u = y.includes('u')
+//   console.log(a, e, i, o, u)
+//   let vowel = [a, e, i, o, u]
+//   if (!a){
+//     console.log(a)
+//     return vowel
+//   }
