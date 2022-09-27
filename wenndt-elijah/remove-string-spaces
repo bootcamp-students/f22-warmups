@@ -1,0 +1,10 @@
+//find the space between the strings
+//replace them with no space
+//string=x
+//x.replace
+
+function noSpace(x){
+ let newText = x.replace(/ /g, "")
+ return newText
+  
+}
