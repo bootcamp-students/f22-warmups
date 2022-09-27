@@ -1,0 +1,7 @@
+//PSEUDOCODE
+//find all spaces, replace with no space
+
+
+function noSpace(x){
+  return x.replace(/\s+/g, '');
+}
