@@ -1,3 +1,7 @@
 function century(year){ 
 return Math.ceil(year / 100);
 }
+
+//take year divid it by 100 
+// Math.ceil round up
+// round up no matter the decimal place
