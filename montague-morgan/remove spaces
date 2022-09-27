@@ -1,0 +1,9 @@
+function noSpace(x){
+  let y = x.split(' ').join('')
+  console.log(y)
+  return y
+}
+
+// not simple KEITH
+// I set y to equal x, while also splitting the array from ' ', I then join all the arrays back with .join
+// then simply return y
