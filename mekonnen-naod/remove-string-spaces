@@ -1,0 +1,10 @@
+// use replace method -replace(//g,'')
+// set new variable to x.replace(...)
+// return new variable
+
+function noSpace(x){
+// const removed = x.replaceAll(' ', '');
+  let replaced = x.replace(/ /g, '');
+  return replaced;
+  
+}
