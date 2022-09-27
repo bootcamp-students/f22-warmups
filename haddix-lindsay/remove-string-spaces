@@ -1,0 +1,4 @@
+function noSpace(x){
+ //find white spaces and replace them with no space and then return the string
+  return x.replace(/\s+/g, '');
+}
