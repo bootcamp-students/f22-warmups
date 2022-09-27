@@ -15,5 +15,5 @@ function absentVowel(x){
       return Number(i);
     }
   }
-  
+}  
   
