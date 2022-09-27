@@ -1,0 +1,6 @@
+//replacing the whitespace with nothing globaly 
+function noSpace(x){
+str = x.replace(/\s+/g, '');
+  return str;
+
+}
