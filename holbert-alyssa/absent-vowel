@@ -1,0 +1,29 @@
+//PSEUDOCODE
+//put vowels in an array
+//loop through each value in array
+//detect if each vowels exists in the string
+//if vowel does not exist in the string, return index of missing vowel
+
+//if A exists, do nothing
+//if A does not exist, return '0'
+//else repeat for each vowel
+
+function absentVowel(x){
+  const vowels = ['a','e','i','o','u'];
+  
+  if (!x.includes(vowels[0])) {
+    return 0;
+  }
+   if (!x.includes(vowels[1])) {
+    return 1;
+  }
+   if (!x.includes(vowels[2])) {
+    return 2;
+  }
+   if (!x.includes(vowels[3])) {
+    return 3;
+  }
+   if (!x.includes(vowels[4])) {
+    return 4;
+  }
+  }
