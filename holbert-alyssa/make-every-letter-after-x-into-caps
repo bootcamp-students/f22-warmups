@@ -1,0 +1,27 @@
+//PSUEDOCODE
+//get string
+//find every instance of x in string
+//log instances of x
+//detect first letter after x (y)
+//capitalize y
+
+
+var makeEveryLetterAfterXCaps = function (str, letter) {
+// enter solution here
+ console.log(letter);
+ let x = str.indexOf(letter);
+  console.log(x);
+  let caps = x + 1;
+  console.log(caps);
+  let y = str.charAt(2);
+  console.log(y);
+  
+  let upperCase = str.charAt(2).toUppercase();
+  console.log(upperCase);
+  
+  //for every instance of y, replace with Y
+  
+  
+  
+
+}
