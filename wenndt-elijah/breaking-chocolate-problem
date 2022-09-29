@@ -1,0 +1,16 @@
+//find area of chocolate bar
+//subtract 1
+//IF bar size is greater than 0
+//return barSize 
+//else
+//return 0
+function breakChocolate(n,m) {
+  let barSize = (n * m) - 1
+  if (barSize>0) {
+    return barSize
+  }
+  else {
+    return 0
+  }
+  
+}
