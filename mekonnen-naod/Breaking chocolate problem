@@ -1,0 +1,10 @@
+// m and n must be greater than 0
+// calculate the area minus 1
+ 
+function breakChocolate(n,m) {
+if ((n > 0) && (m > 0)){
+return (n * m) -1}
+   else
+   { return 0
+   };
+}
