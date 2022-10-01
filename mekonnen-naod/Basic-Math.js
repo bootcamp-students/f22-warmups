@@ -1,6 +1,9 @@
+
 function calculate(str) {
-
-return (eval(str.replace(/(plus)/gi,'+').replace(/(minus)/gi,'-'))).toString()
-
-  return str;
+  str = str.split('plus');
+  str = str.join('+');
+  str = str.split('minus');
+  str = str.join('-');
+  
+return eval(str) + '';
 }
