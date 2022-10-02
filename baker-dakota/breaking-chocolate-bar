@@ -1,0 +1,9 @@
+//bars dimensions are n * m
+//number of breaks would take n * m -1
+//if no size given or negative return 0
+function breakChocolate(n,m) {
+  let barsize = n * m - 1;
+ if (barsize >  0){
+   return barsize;
+ } else return 0
+}
