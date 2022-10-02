@@ -1,0 +1,7 @@
+//split into array of substrings
+//.join to make a string from array with no characters between
+//return new string
+function noSpace(x){
+let newString = x.split(" ").join("");
+  return newString;
+}
