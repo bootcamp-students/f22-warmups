@@ -1,0 +1,7 @@
+//return number of coins it takes to make cents int
+//cents/coin value 
+//cent - coin times coin value
+//return array [pennies cents % 5, nickels cents % 25 % 10 / 5, dimes cents % 25/ 10, quarters cents /25]
+function coinCombo (cents) {
+  return [cents % 5, Math.floor(cents % 25 % 10 / 5), Math.floor(cents % 25 / 10), Math.floor(cents/25)];
+}
