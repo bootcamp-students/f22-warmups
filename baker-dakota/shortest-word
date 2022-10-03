@@ -1,0 +1,13 @@
+//split it into an array of substrings
+//order array from smallest to longest
+//return length of shortest word index 0
+//return length as num
+function findShort(s){
+ const arr = s.split(' ');
+arr.sort(function (a,b){
+  return a.length - b.length;
+})
+  let shortest = arr[0];
+  let length = shortest.length;
+  return length;
+}
