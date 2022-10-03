@@ -12,3 +12,8 @@ function findShort(s){
   }  // End of For str
   return short;
 }
+
+// Take the mininum value of the array after you split it, and then convert the string arrays to the length of the letters
+function findShortest(str){
+  return Math.min.apply(null, str.split(' ').map( str => str.length));
+}
