@@ -1,0 +1,35 @@
+var makeEveryLetterAfterXCaps = function (str, letter) {
+
+  
+  let newString = 1 + (str.indexOf(letter));
+  // new string will find the letter and add 1, this allows us to target the following array position
+//   console.log(newString);
+  // returns 2 because it finds a, which is in the 1 position and adds 1 
+  newString = str.charAt(newString);
+  // this now will find the desired letter and using the positioning
+//   console.log(newString)
+  let insertString = newString.toUpperCase(newString);
+  //This captilizes the specified position in the array
+//   console.log(insertString)
+  
+  let x = str.charAt(newString)
+//   console.log("testing ",x)
+  let y = str.split(newString).join(insertString);
+  //splits and removes the old uncaptilized version and joins the gap with y
+  
+//   console.log(y)
+  
+  
+  return y
+  
+  
+}
+
+// using .join we connect all the string into an
+//.join(letter.toUpperCase(letter));
+// str var indexOf(letter)
+// returns a int + 1
+// set indexDo var to = str.charAt(int + 1)
+//  cap string
+
+// const new string = str.split(str).join(indexDo)
