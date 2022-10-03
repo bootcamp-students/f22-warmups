@@ -1,0 +1,15 @@
+function findShort(s){
+  let array = [];
+  console.log(s) 
+  let test = s.split(" ")
+  console.log(test)
+  //find longest string in returned array
+  for ( let i = 0;i < test.length; i++) { 
+    let fast = test[i].length;
+    array.push(fast)
+    console.log(array) 
+  }
+  const min = Math.min.apply(Math, array)
+  console.log(min)
+  return min
+}
