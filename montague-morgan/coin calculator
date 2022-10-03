@@ -1,0 +1,52 @@
+// Jude was the driver for this one. Tried to keep my failed attempts
+
+function coinCombo (cents) {
+//   let doTest = [0,0,0,0]
+//   let quaters = math.floor(cents/2)
+//   quaters = doTest[3]
+//   let dimes = math.floor(cents/10)
+//   dimes = doTest[2]
+//   let nickles = math.floor(cents/20)
+//   nickles = doTest[1]
+//   let penny = math.Floor(cents/100)
+//   penny = doTest[0]
+//   console.log(doTest)
+  
+  let coin = [1,5,10,25];
+  for (let i = 3; i >= 0; i--){
+    let holdCent = Math.floor(cents / coin[i]);
+    if (cents >= coin[i]){
+      cents = cents - (holdCent * coin[i]);
+      coin[i] = holdCent;
+    } else 
+      coin[i] = 0;
+ }
+//   console.log(coin)
+  return coin;
+}
+
+// var array coin index of 4, holds all coin values least to greatest
+// penny, nickle, dime, quater
+
+
+// if i is equal to or greater then 0 loop
+// i = i - 1 
+
+// set var holdCent = Math.floor(cents / coin[i]
+// Math.floor round down after cents is divided by array coin index value i
+
+
+// IF cents greater then > or equal to coin array index value i
+// set var cents to equal = cents - (holdcent * coin[i])
+// set array coin[i] to the value of holdCent
+
+// Else 
+//set array coin[i] to equal 0
+
+//return coin array
+  
+  
+
+
+// This is putting a number 1-99 into the smallest number of coins needed to represent them into an array
+//
