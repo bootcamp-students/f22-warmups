@@ -1,0 +1,9 @@
+function findShort(s){
+
+  let splitString = s.split(' ')
+
+   let x = splitString.sort(function(a, b) { 
+     return a.length - b.length
+   });
+  return x[0].length
+ }
