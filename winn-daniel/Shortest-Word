@@ -1,0 +1,21 @@
+function findShort(s){
+  //split the string into an array
+  //compare the lengths of each array index 
+  //return the smallest array length 
+  let splitString = s.split(' ')
+  let x = splitString.sort(function(a, b){
+    return a.length - b.length
+  });
+  return x[0].length
+  }
+
+    
+    
+    
+//     if (splitString[i].length < splitString[i++].length){
+//       shortestWord = splitString[i].length;
+//       } else {
+//         shortestWord = splitString[i++].length;
+//       }
+//     console.log(shortestWord)
+//   }
