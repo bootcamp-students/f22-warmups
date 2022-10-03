@@ -1,0 +1,16 @@
+function calculate(str) {
+let fart = str.replace('plus', '+');
+  fart = fart.replace('minus', '-');
+   fart = fart.replace('plus', '+');
+  fart = fart.replace('minus', '-');
+  fart = fart.replace('plus', '+');
+  fart = fart.replace('minus', '-');
+  fart = fart.replace('plus', '+');
+fart = fart.replace('minus', '-');
+  console.log(fart)
+let  str1 = eval(fart)
+  
+  str = str1.toString()
+  console.log(str)
+return str;
+}
