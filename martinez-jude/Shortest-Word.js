@@ -20,4 +20,8 @@ function findShort(s){
 // var shortWord set to func Param (s) [length] of string
 
 //for loop (var i = 0, if i is greater then array length)
+
+//sort()
+//map()
+//reduce()
 //
