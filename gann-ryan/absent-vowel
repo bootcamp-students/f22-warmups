@@ -1,0 +1,16 @@
+let test;
+function absentVowel(x){
+ if (x.includes('a') === false) {
+   test = 0;
+   return test
+ } else if (x.includes('e') === false) {
+   test = 1;
+ } else if (x.includes('i') === false) {
+   test = 2;
+ } else if (x.includes('o') === false) {
+   test = 3;
+ } else if (x.includes('u') === false) {
+   test = 4;
+ }   
+   return test  
+}
