@@ -1,0 +1,16 @@
+function findShort(s){
+  let newWord = s.split(' ');
+  console.log(newWord);
+  newWord.sort((min,max) => min.length - max.length);
+  console.log(newWord)
+  return newWord[0].length;
+}
+// min and max are just parameters
+
+// logic part
+// string will never be empty and it's only strings with letters, no numbers
+
+// split string into an array by spliting at a space, creating an array for each word
+// using the method .sort we can set parameters to sort the array or strings
+// sort new array and use .length to set them by length, the shortest one will be at the position 0 in the array
+// return shortest string by index value [0] and find the length of it with .length
