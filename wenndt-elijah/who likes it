@@ -1,0 +1,21 @@
+function likes(names) {
+  // TODO
+  for (let i=0; i<=names.length; i++){
+    if (names.length === 0){
+      console.log(names[i]);
+      return 'no one likes this';
+    } else if (names.length === 1){
+      console.log(names[i]);
+      return names[i] + ' likes this'
+    } else if (names.length === 2){
+      console.log(names[i]);
+      return names[i] +' and '+ names[i+1] + ' like this'
+    } else if (names.length === 3){
+      console.log(names[i]);
+      return names[i] +', '+ names[i+1] + ' and ' + names[i+2] + ' like this'
+    } else if (names.length >= 4){
+      console.log(names[i]);
+      return names[i] +', '+names[i+1] + ` and ${names.length-2} others like this`
+    }
+  }
+};
