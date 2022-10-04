@@ -1,0 +1,28 @@
+function highAndLow(numbers){
+  let arr = []
+  console.log(numbers)
+  let test = numbers.split(' ')
+  console.log(test)
+  
+  
+  let number = Number(test)
+  console.log(number)
+  for (i = 0; i < test.length; i++) {
+    let number = Number(test[i])
+    arr.push(number)
+    
+  }
+ console.log(arr)
+  let max = Math.max(...arr)
+  console.log(max)
+ 
+  let min = Math.min(...arr)
+  console.log(min)
+ 
+  let add = max + ' ' + min
+ console.log(add)
+  let help = add.toString()
+  console.log(help)
+  return add
+ 
+}
