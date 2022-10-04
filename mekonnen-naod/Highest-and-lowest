@@ -1,0 +1,10 @@
+// return the highest and lowest number in the string with spaces
+// it's a string and not an array
+// convert string to array and set to a new variable
+// sort the array
+
+function highAndLow(numbers){
+  let array = numbers.split(' ');
+  array.sort(function(a,b){return a-b;});
+  return array[array.length -1] + ' ' + array[0];
+}
