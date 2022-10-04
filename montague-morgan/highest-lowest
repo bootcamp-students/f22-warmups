@@ -5,8 +5,8 @@ function highAndLow(numbers){
   // first need to split the large string of numbers into an array, seperate by the space
   // the function compareNumber will have two params a and b, a always minus b
   // sorting will place the numbers arrays in order from smallest to largest
-  // we can then shift num array and set that to min
-  // set max to numArr .pop, and to set the .length - 1 will give you the last index which will be the largest
+  // set min = numArr[0]
+  // set max to numArr  .length - 1 will give you the last index which will be the largest
   // push max into and empty array then min as well, push adds it to the end
   // join the array with a space to get the answer in a nice single string
   //return the string
@@ -18,12 +18,14 @@ function highAndLow(numbers){
   }
   
   numArr.sort(compareNumber)
-  console.log(numArr)
+//   console.log(numArr)
   let answer = []
-  let min = numArr.shift(numArr)
-  console.log(min)
-  let max = numArr.pop(numArr[(numArr.length - 1)])
-  console.log(max)
+  console.log(numArr)
+  let min = numArr[0]
+  console.log(numArr)
+//   console.log(min)
+  let max = (numArr[(numArr.length - 1)])
+//   console.log(max)
   answer.push(max)
   answer.push(min)
   answer = answer.join(' ')
