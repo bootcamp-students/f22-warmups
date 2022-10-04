@@ -1,0 +1,29 @@
+function likes(names) {
+  // TODO
+  console.log(names);
+  if (names.length === 0){
+    return 'no one likes this'
+  };
+   if (names.length === 1){
+     console.log(names[0])
+    return names[0] + ' likes this'
+  };
+  if (names.length === 2){
+    return names[0] + ' and '+ names[1] + ' like this'
+  };
+  if (names.length === 3) {
+    return names[0] + ', '+ names[1] + ' and ' + names[2] + ' like this'
+  }
+  if (names.length>= 4){
+    let number = names.slice(2)
+    console.log(number.length)
+    return names[0] + ', '+ names[1] +' and ' + number.length + ' others like this'
+  }
+};
+
+// using multiple if statements by using the the length of the array as the condition
+// if it is zero return no one likes it
+// if it is equal to 1 return position 0 of names + likes this
+// if it is equal to 2 return position 0 + and + position 1 like this
+// if it is equal to 3 return position 0 +, + position 1 + and + position 2 like this
+// if is is equal to or greater to 4, return position 0 +, + position 1 + and + (names.length -2) + likes this
