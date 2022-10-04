@@ -1,0 +1,17 @@
+function highAndLow(numbers){
+   // make string an array
+  // find highest number in the array
+  // iterate on each number and compare to the current highest
+  // find lowest number in the array
+  // return highest, lowest
+
+  let arr = numbers.split(' ');
+  //console.log(arr);
+
+  
+ const highNumber = Math.max(...arr); // [1,2,3] => 1,2,3
+  const lowNumber = Math.min(...arr);
+  //console.log(highNumber, lowNumber);
+ return `${highNumber} ${lowNumber}`;
+  
+}
