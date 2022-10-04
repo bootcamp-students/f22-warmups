@@ -1,0 +1,18 @@
+ 
+  if (names.length === 0) {
+    let zeroMessage = 'no one likes this';
+     return zeroMessage; 
+  } else if (names.length === 1) {
+    let oneMessage = names[0] + ' likes this';
+    return oneMessage;
+  } else if (names.length === 2) {
+    let twoMessage = names[0] + ' and ' + names[1] + ' like this';
+    return twoMessage;
+  } else if (names.length === 3) {
+    let threeMessage = names[0] + ', ' + names[1] + ' and ' + names[2] + ' like this';
+    return threeMessage;
+  } else if (names.length >= 4) {
+    let fourPlusMessage = names[0] + ', ' + names[1] + ' and ' + (names.length - 2) + ' others like this';
+    return fourPlusMessage;
+  }
+  }
