@@ -1,0 +1,34 @@
+//get number of seconds
+//hours = number of seconds/3600
+//minutes = modulo/60
+//seconds = modulo 
+//if seconds >=3600
+  //divide by 3600 = hours
+  //find modulo
+  //if modulo is >= 60 
+  //divide by 60 = minutes
+  //find modulo
+  //modulo = seconds
+
+function humanReadable (seconds) {
+  
+  var numseconds = ((seconds % 3600) % 60);
+    if (numseconds < 10) {
+      numseconds = `0${numseconds}`;
+    }
+  console.log(numseconds);
+  
+var numminutes = Math.floor((seconds % 3600) / 60);
+  if (numminutes < 10) {
+    numminutes = `0${numminutes}`;
+  }
+  console.log(numminutes);
+  
+var numhours = Math.floor(seconds / 3600);
+    if (numhours < 10) {
+    numhours = `0${numhours}`;
+  } 
+  console.log(numhours);
+
+return `${numhours}:${numminutes}:${numseconds}`;
+}
