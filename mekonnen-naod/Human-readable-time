@@ -1,0 +1,27 @@
+// a function that takes a non-negative integer(secs) as input and returns the time in readable format
+// set three variables for secs, minutes and hours
+// convert to hours and minutes based on seconds
+// set conditionals to concat a zero to hours and minutes if they're less than 0
+// return the concated variables to display human readable time
+
+function humanReadable (seconds) {
+  let hours   = Math.floor(seconds / 3600)                 
+  let minutes = Math.floor((seconds - (hours * 3600)) / 60)
+  let secs = Math.floor(seconds % 60);
+
+  
+  if(hours < 10){
+    hours = '0' + hours
+  }
+  if(minutes < 10){
+    minutes = '0' + minutes
+    console.log(minutes)
+  }
+  if(secs < 10){
+    secs = '0' + secs
+    console.log(seconds)
+  }
+  
+  return hours + ':' + minutes + ':' + secs
+ }
+  
