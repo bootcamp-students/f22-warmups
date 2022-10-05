@@ -1,0 +1,15 @@
+// create a function that takes a list of non-negative integers and strings
+// and returns a new list with the string filtered out
+// iterate through the input using a for loop
+// check if i is an integer(use Number.isInteger)
+// push the result(integer)
+
+ function filter_list(l) {
+  var integers = []
+  for(var i = 0; i < l.length; i++){
+  if(Number.isInteger(l[i])){
+  integers.push(l[i])
+    } 
+  }
+  return integers
+}
