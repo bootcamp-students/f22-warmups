@@ -1,0 +1,6 @@
+function filter_list(l) {
+  const onlyNumbers = l.filter(
+  element => typeof element === 'number'
+);
+  return onlyNumbers;
+}
