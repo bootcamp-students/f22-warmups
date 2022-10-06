@@ -1,0 +1,6 @@
+function songDecoder(song){
+  const array = song.split('WUB'); //gives array
+  console.log(array);
+  const array1 = array.filter((arr) => arr !== '');
+  return array1.join(' ');
+}
