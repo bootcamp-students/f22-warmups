@@ -1,0 +1,20 @@
+// given two strings:return a new sorted string, the longest possible containing distinct letters
+// new variable: concat the two strings
+// new variable: split the concated array
+// new variable: sort the the split array
+// new variable: an empty array for the rearranged letters to populate
+// use a for...of loop to check for the letter in the sorted array
+// join the split at the end
+
+function longest(s1, s2) {
+let newString = s1+s2;
+let newArray = (s1 + s2).split('');
+let sortedArray = newArray.sort();
+let finalArray = [];
+for(let letter of sortedArray){
+      if(!finalArray.includes(letter)){
+         finalArray.push(letter)
+      }
+   }
+return (finalArray.join(''))
+};
