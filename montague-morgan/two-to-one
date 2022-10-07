@@ -1,0 +1,23 @@
+function longest(s1, s2) {
+  let s3 = (s1 + s2)
+  console.log(s3)
+ 
+  let arr = [];
+  for (let i = 0; i < s3.length; i++) {
+    if (arr.includes(s3[i]) == false) {
+      arr.push(s3[i])
+    }
+  }
+  console.log(arr)
+  arr = arr.sort()
+  console.log(arr)
+  let s4 = arr.join('')
+  return s4;
+};
+
+// need to combine two strings with just. This strings only contain letters a to z, they can be repeated though
+// after combining the two strings into s3 we need to loop them 
+// we can set a conditional with if, if i, which is is looped for each letter in s3, isn't included in the array
+// we can then push the nonincluded into the array
+// using the sort method, sorts arrays by alphabetically
+// we need to change this array into a string, we use .join '' with an empty string so there is no space
