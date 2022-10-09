@@ -1,0 +1,7 @@
+//filter list .filter
+//checking if each index is NaN
+//return list with numbers only
+function filter_list(l) {
+  console.log(l)
+ return l.filter(list => typeof list === 'number');
+}
