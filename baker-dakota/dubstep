@@ -1,0 +1,14 @@
+//song consists of some number of words
+//song may be 0
+//insert a certain number of wub before first word of the song
+//insert a certain number of wub after the last word of the song
+//insert a certain number of wub between words of the song
+function songDecoder(song){
+  let spaced = ' ';
+  let arr = song.split('WUB');
+  let newArr = arr.filter(element => element.trim());
+let newSong = newArr.join (' ');
+  
+   return newSong;
+    
+  }
