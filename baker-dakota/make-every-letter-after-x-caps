@@ -1,0 +1,13 @@
+//push to array
+// loop through arr.length
+//if index - 1 is equal to the letter
+//arr index = array index to uppcase
+//join as string
+var makeEveryLetterAfterXCaps = function (str, letter) {
+let arr = str.split('');
+    for (let i = 0; i < arr.length; i++) { 
+      if (arr[i - 1] === letter) {
+        arr[i] = arr[i].toUpperCase();
+      }
+    } return arr.join('');
+  }
