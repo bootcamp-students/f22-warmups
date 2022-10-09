@@ -1,0 +1,7 @@
+//addition and subtraction to string
+//return must also be a string
+//take plus from string and replace with addition
+//time minus from string and replace with minus
+function calculate(str) {
+  return eval(str.split('plus').join('+').split('minus').join('-')) + '';
+  }
