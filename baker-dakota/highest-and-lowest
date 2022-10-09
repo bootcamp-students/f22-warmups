@@ -1,0 +1,15 @@
+//convert string to array 
+//order array from highest to lowest
+//return first and last index
+
+function highAndLow(numbers){
+ let arr = numbers.split(' ');
+const arrNum = arr.map(str => {
+  return Number(str);
+});
+const sortArr = arrNum.sort((a, b) => {
+  return b - a;
+})
+console.log(sortArr)
+return `${sortArr[0]} ${sortArr[sortArr.length - 1]}`;
+}
