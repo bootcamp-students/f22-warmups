@@ -1,0 +1,25 @@
+function order(words){
+  
+  let handwave = words.split(" ");
+  let num = ' ';
+  let newArray = [];
+    for(let i = 0; i < handwave.length; i++){
+      let str = handwave[i];
+      for(let j=0; j<str.length; j++){
+        
+        
+        if (str[j] !== NaN){
+        num = str[j];
+        num = num.string;
+        num--;}
+      let Array2 = newArray.push(num)
+      }
+    }
+  
+  
+  
+ // catString = 'ca4t'
+ // if (catString[2] !== NaN){
+    //console.log('true');
+  //}
+}
