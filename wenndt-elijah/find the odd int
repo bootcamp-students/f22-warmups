@@ -1,0 +1,25 @@
+//map over the array
+//count each value
+//inserting value in a new array
+//check if value is divisible by 2
+//return the number that is not divisible by 2
+
+function findOdd(A) {
+  let myMap = new Map();
+  
+  for (let i=0; i<A.length; i++) {
+    if (myMap.has(A[i])) {
+      let myValue = myMap.get(A[i])
+      
+      myMap.set(A[i], myValue + 1)
+    }
+    else {
+      myMap.set(A[i], 1)
+    }
+  }
+  for (let [key, value] of myMap.entries()){
+    if(myMap.get(key) % 2 != 0)
+      return key;
+  }
+    return -1;
+}
