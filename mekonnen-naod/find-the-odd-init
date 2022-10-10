@@ -1,0 +1,26 @@
+// given an array of integers find the one that appears an odd number of times
+// there will only be one integer that appears an odd number of times
+// run a nested for loop to iterate through the given array
+// compare the results of the for loops to compare the results
+// if the two results are the same, incerement a predefined variable
+// use modulo operator to check if odd/even
+
+function findOdd(A) {
+ let x = 0;
+ let y;
+ A.sort();
+
+  for(let i =0; i<A.length; i++){
+    if(A[i] === y){
+      x ++;
+      continue;
+    }
+  if (x % 2) return y;
+    y = A[i];
+    x = 1
+  }
+  
+ return y;
+  
+}
+  
