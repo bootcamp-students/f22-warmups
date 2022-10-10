@@ -1,0 +1,21 @@
+function findOdd(A) {
+ let arr = A;
+const findOdd = arr => {
+   let count = 0;
+   let last;
+   arr.sort((a, b) => a - b);
+   for (let i = 0; i < arr.length; i++){
+      if (arr[i] === last) {
+         count++;
+         continue;
+      };
+      if(count % 2){
+         return last;
+      };
+      last = arr[i];
+      count = 1;
+   };
+   return last;
+};
+  
+return(findOdd(arr));
