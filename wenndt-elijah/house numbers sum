@@ -1,0 +1,11 @@
+function houseNumbersSum(inputArray) {
+  //coding and coding..
+  console.log(inputArray)
+  let solution = 0
+  let stopPoint = inputArray.indexOf(0)
+  for (let i = 0; i<stopPoint; i++){
+    
+    solution = inputArray[i] += solution
+  }
+  return solution
+}
