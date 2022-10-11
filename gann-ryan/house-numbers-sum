@@ -1,0 +1,17 @@
+let test = 0;
+function houseNumbersSum(inputArray) {
+  //coding and coding..
+  //if number = 0 return var
+  //if else var = var + index
+  console.log(inputArray)
+  let test = 0;
+  for ( i = 0 ;i < inputArray.length; i++) {
+    if (inputArray[i] === 0) {
+      return test
+    } else {
+       test = inputArray[i] + test
+    }
+  }
+  console.log(test)
+  return test
+}
