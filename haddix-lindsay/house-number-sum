@@ -1,0 +1,15 @@
+function houseNumbersSum(inputArray) {
+  //coding and coding..
+  let newArr =[]
+  for (let i = 0; i < inputArray.length; i++) {
+    if (inputArray[i] == 0) {
+      break
+    }
+    if (inputArray[i] !== 0) {
+      newArr.push(inputArray[i])
+    }
+  }
+  let initialValue = 0
+  let answer = newArr.reduce((previousvalue, newvalue) => previousvalue + newvalue, initialValue)
+  return answer;
+  }
