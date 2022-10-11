@@ -1,0 +1,17 @@
+function breakChocolate(n,m) {
+  let size = (n * m) -1;
+  if (size >  0) {
+    return size;
+  } else {
+    return 0;
+  }
+ }
+
+
+// pseudocode part
+// n and m can't be zero, that would just be empty space
+// find area of by multiplying n and m
+// can find this using an if else statement
+// smallest square is 1 so if we have a number greater than 1 subtract one
+// following this train of thought, if size is still larger than 0, there are breakable pieces left to count
+// else since no more breakable pieces return 0
