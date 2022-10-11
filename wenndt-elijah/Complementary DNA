@@ -1,0 +1,20 @@
+function DNAStrand(dna){
+  let myArr = dna.split('')
+  let blankArr = []
+  console.log(myArr)
+  myArr.forEach(function(e) {
+    if (e=='A'){
+      blankArr.push('T')
+    }
+    else if (e=='T'){
+      blankArr.push('A')
+    }
+    else if (e=='G'){
+      blankArr.push('C')
+    }
+    else if (e=='C'){
+      blankArr.push('G')
+    }
+  })
+  return blankArr.join('');
+}
