@@ -1,0 +1,23 @@
+function DNAStrand(dna){
+    let newStr = dna.split('');
+    let arr = []
+ 
+      for (let i=0; i <= newStr.length; i++) {
+        if (newStr[i] === 'A') {
+          arr.push("T")
+        }   
+      
+        if (newStr[i] === 'T') {
+          arr.push("A")
+        }
+        
+        if (newStr[i] === 'G') {
+          arr.push("C")
+        }
+        
+        if (newStr[i] === 'C') {
+          arr.push("G")
+        }
+     }
+   return arr.join('');
+}
