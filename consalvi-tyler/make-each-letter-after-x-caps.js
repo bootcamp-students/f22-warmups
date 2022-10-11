@@ -20,6 +20,5 @@ var makeEveryLetterAfterXCaps = function (str, letter) {
             letters[capitalize] = newLetter
           }    
         }
-      }      
-      return letters.join('')
-    }
+      } return letters.join('')
+}
