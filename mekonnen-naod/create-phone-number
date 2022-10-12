@@ -1,0 +1,16 @@
+// write a function that accepts an array of 10 intgers(0-9)
+// that returns a string of those numbers in the form of a phone number
+// set a variable in the format of a tel number(using x as a placeholder for the numbers)
+// iterate through the array using a for loop
+// replace the x's for each index in the array
+
+
+function createPhoneNumber(numbers){
+ console.log(numbers) 
+  var tel = "(xxx) xxx-xxxx";
+  for (var i=0; i<numbers.length; i++){
+    tel = tel.replace('x', numbers[i]);
+  }
+  
+  return tel;
+}
