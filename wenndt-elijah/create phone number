@@ -1,0 +1,6 @@
+function createPhoneNumber(numbers){
+  //turn the array into a string 
+  //put a parenthesis around the first three numbers then a space
+  //then put a dash between the sixth and seventh numbers 
+  return `(${numbers.slice(0, 3).join('')}) ${numbers.slice(3, 6).join('')}-${numbers.slice(6).join('')}`;
+}
