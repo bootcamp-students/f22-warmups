@@ -1,0 +1,20 @@
+function calculate(str) {
+str = str.split('plus')
+  console.log(str)
+  str = str.join('+')
+  console.log(str)
+  str = str.split('minus')
+  str = str.join('-')
+  let answer = eval(str)
+  console.log(answer)
+  answer = answer.toString()
+return answer;
+}
+
+// alright looking at this a week later
+// I can split the string at each plus and minus
+// join after each and bam REACT SUCKS
+
+// really don't want to use eval cause mdn says its risky
+
+// KEITH don't steal my ssn from this
