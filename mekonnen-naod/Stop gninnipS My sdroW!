@@ -1,0 +1,30 @@
+// given a string of one or more words
+// return the same string but with all letters reversed
+// strings passed will consist of only letters and spaces
+// spaces will be included when there's more than one word
+// split the string into an array
+// set a new variable to an empty array
+// use a for loop to iterate through the split array; if the length is greater or equal to 5
+// push the split
+// use reverse to reverse the array
+// join the reversed array and return
+
+  function spinWords(string){
+  const arr = string.split(" ");
+  let newArray = [];
+  
+  for (let i of arr) {
+    if(i.length >= 5) {
+      newArray.push(i.split("").reverse().join(""));
+    } else {
+      newArray.push(i);
+    }
+  }
+      
+  return newArray.join(" ");
+}
+  
+
+    
+    
+    
