@@ -1,0 +1,35 @@
+function humanReadable (seconds) {
+  let hours = Math.floor(seconds/3600)
+  let minutes = Math.floor(((seconds-(hours*3600))/60))
+  let remainSeconds = (seconds - ((hours*3600)+(minutes*60)))
+  if(hours<10){
+    hours = '0'+hours
+  }
+  if (minutes <10){
+    minutes = '0'+minutes
+  }
+  if (remainSeconds<10){
+    remainSeconds = '0'+remainSeconds
+  }
+  return hours +':'+minutes+':'+remainSeconds;
+}
+
+// given non negative interger seconds
+// 3600 seconds in an hour
+// 60 seconds in a minute
+// console.log((7800 % 3600))
+// if seconds is larger than 3600 subtract 
+// let exam = 124567
+// let hours = 0
+// let minutes = 0
+// let seconds = 0
+// if (exam >= 3600){
+ 
+// }
+//   let hours = 0
+//   let minutes = 0
+//   let remainSec = 0
+//   if (seconds >= 3600) {
+//     hours = Math.florr(seconds/3600)
+//     remainSec = seconds % 3600
+//   }
