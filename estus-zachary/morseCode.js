@@ -11,7 +11,7 @@ decodeMorse = function(morseCode){
     if(code[i] != ''){
         deCode.push(MORSE_CODE[code[i]]);
       }
-      if(code[i] === '' && code[i+1] != '' && code[i+1] != undefined){
+      if(code[i] === '' && code[i+1] != ''){
         deCode.push(' ');
       }
     }
