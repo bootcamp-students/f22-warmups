@@ -4,7 +4,7 @@ check if iterable is an array
 if yes continue
 if not make it so
 function to loop through the array and check for duplicates next to each other
-run function 2x to make sure all bugs are squished
+decriment i to check the new value after removal
 */
 
 var uniqueInOrder=function(it){
