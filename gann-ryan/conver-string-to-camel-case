@@ -1,0 +1,23 @@
+let result
+function toCamelCase(str){
+  let splt = str.split('')
+  console.log(splt)
+  let f = -1
+  for (i= 0; i < splt.length; i++) {
+    if (splt[f] === '_') {
+      splt[i] = splt[i].toUpperCase()
+      splt[f] = splt[f].replace('_', '')
+      
+    } else if (splt[f] === '-') {
+       splt[i] = splt[i].toUpperCase()
+      splt[f] = splt[f].replace('-', '')
+    }
+    f++
+  } 
+console.log(splt)
+
+  let result = splt.join('')
+   
+  
+  return result
+}
