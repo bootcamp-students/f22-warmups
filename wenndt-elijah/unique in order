@@ -1,0 +1,21 @@
+var uniqueInOrder=function(iterable){
+  let blankArr = []
+  
+  if (typeof iterable === 'string'){
+    let iArr = iterable.split("")
+    for (let i=0; i<iArr.length; i++){
+    if (iArr[i] !== iArr[i+1]){
+    blankArr.push(iArr[i])
+      }
+  }
+  }
+  else if(Array.isArray(iterable)){
+    for (let i=0; i<iterable.length; i++){
+      if (iterable[i] !== iterable[i+1]){
+      blankArr.push(iterable[i])
+  }
+ 
+  }
+}
+  return blankArr
+  }
