@@ -1,0 +1,30 @@
+var uniqueInOrder=function(iterable){
+  //your code here - remember iterable can be a string or an array
+  //make a new array 
+  //then run iterable through a for each function 
+  let soup = [];
+  
+  if (typeof iterable === 'string'){
+    let chicken = iterable.split('');
+    for (let i =0; i<chicken.length; i++) {
+   if (chicken[i+1] !== chicken[i]) {
+      
+    soup.push(chicken[i]);
+      }
+    }
+    return soup;
+  }
+  else if (Array.isArray(iterable)){
+    let chicken = iterable
+    for (let i =0; i<chicken.length; i++) {
+   if (chicken[i+1] !== chicken[i]) {
+      
+    soup.push(chicken[i]);
+      }
+    }
+    return soup;
+    
+    
+  }
+
+}
