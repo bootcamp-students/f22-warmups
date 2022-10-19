@@ -1,0 +1,32 @@
+let result 
+var uniqueInOrder=function(iterable){
+  //your code here - remember iterable can be a string or an array
+  console.log(iterable)
+  if (Array.isArray(iterable) != true) {
+  let split = iterable.split('')
+  console.log(split)
+  let result = []
+  let f = -1
+  for (i = 0; i < split.length; i++) {
+     
+    if (split[i] != split[f]) {
+      result.push(split[i])
+    }
+    f++
+  }
+  console.log(result)
+  return result
+    } else {
+      let result = []
+  let f = -1
+  for (i = 0; i < iterable.length; i++) {
+     
+    if (iterable[i] != iterable[f]) {
+      result.push(iterable[i])
+    }
+    f++
+  }
+  console.log(result)
+  return result
+    }
+}
