@@ -1,0 +1,49 @@
+
+// console.log(number)
+  // number divided by 1000 = that many Ms - push to array
+  // number % 1000 == second number 
+  // second number dvidided by 500 = that many Ds - push to array
+  // second number % 500 = third number
+  // third number divided by 100 = that many Cs - push to array
+  // third number % 100 = fourth number
+  // fourth number divided by 50 = that many Ls - push to array
+  // fourth number % 50 = fifth number
+  // fifth number divided by 10 = that many Xs- push to array
+  // fifth number % 10 = sixth number
+  // sixth number divided by 5 = that many Vs- push to array
+  // sixth number % 5 = seventh number
+  // seventh number divided by 1 = that many Is - push to array
+
+function solution(number) {
+
+  const map = {
+    M: 1000,
+    CM: 900,
+    D: 500,
+    CD: 400,
+    C: 100,
+    XC: 90,
+    L: 50,
+    XL: 40,
+    X: 10,
+    IX: 9,
+    V: 5,
+    IV: 4,
+    I: 1,
+  };
+  let result = '';
+  
+  for (key in map) {  
+    const repeatCounter = Math.floor(number / map[key]);
+    
+    if (repeatCounter !== 0) {
+      result += key.repeat(repeatCounter);
+    }
+    
+    number %= map[key];
+    
+    if (number === 0) return result;
+  }
+  
+  return result;
+};
