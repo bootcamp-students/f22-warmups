@@ -1,0 +1,19 @@
+function countGrade(scores){
+  console.log(scores)
+ 
+  let ScoreS = scores.filter((num) => num === 100)
+  let ScoreA = scores.filter((num) => num >= 90 && num < 100)
+  let ScoreB = scores.filter((num) => num >= 80 && num < 90)
+  let ScoreC = scores.filter((num) => num >= 60 && num < 80)
+  let ScoreD = scores.filter((num) => num >= 0 && num >= 0 && num < 60)
+  let ScoreX = scores.filter((num) => num === -1)
+  let something = {
+    S : ScoreS.length,
+    A : ScoreA.length,
+    B : ScoreB.length,
+    C : ScoreC.length,
+    D : ScoreD.length,
+    X : ScoreX.length
+  }
+ return something
+}
