@@ -1,0 +1,3 @@
+  function double(array) {
+  const doubles = array.map((num) => num * 2);
+  return doubles;
