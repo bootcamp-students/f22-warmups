@@ -1,0 +1,6 @@
+function double(array) {
+    
+    return array.map(arrMap => arrMap *2 )
+  
+    
+}
