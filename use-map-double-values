@@ -1,0 +1,4 @@
+function double(array) {
+    let doubled = array.map(x=> x*2)
+    return doubled
+}
