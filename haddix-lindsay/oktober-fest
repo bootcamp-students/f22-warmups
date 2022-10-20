@@ -1,0 +1,10 @@
+function gameOfFives(bavarianBeerBears,scandinavianSchollers){
+  const resultB = (bavarianBeerBears.filter((num) => num === 5));
+  const resultS = (scandinavianSchollers.filter((num) => num === 5));
+  if (resultB.length == resultS.length) {
+    return "Drinks All Round! Free Beers on Bjorg!";
+  } else  {
+    return "Uh Oh! Bjorg's a donut! No beer for anyone!"
+  }
+
+}
