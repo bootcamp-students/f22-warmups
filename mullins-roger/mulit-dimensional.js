@@ -1,0 +1,6 @@
+function getElement(array, indexes) {
+  for (index of indexes) {
+    array = array[index];
+  };
+  return array;
+};
