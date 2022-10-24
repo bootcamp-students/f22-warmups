@@ -6,6 +6,7 @@
 // use a conditional to compare if a number at index 0 and a number at index 1 are equal
 // if they're unequal, return the arr @ index 0
 // if they're equal, return an array by subtracting one from the length
+// it will return the last element of the array
 
 function findUniq(arr) {
    arr = arr.sort((a, b) => a - b);
