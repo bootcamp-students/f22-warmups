@@ -1,0 +1,16 @@
+let result
+function duplicateCount(text){
+  //...
+  console.log(text)
+  let test = text.toUpperCase()
+   test = test.split('')
+  console.log('test log', test)
+  let findEm = array => test.filter((item, index) => test.indexOf(item) != index)
+  result = findEm(test)
+  console.log('result', result)
+  
+  let set = [...new Set(result)]
+  result = set.length
+  console.log('set', set)
+  return result
+}
