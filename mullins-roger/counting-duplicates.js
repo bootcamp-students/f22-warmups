@@ -32,3 +32,7 @@ function duplicateCount(text){
   }
   console.log(countArray);
   
+  var unique = countArray.filter(onlyUnique);
+  console.log(unique);
+  return unique.length;
+}
