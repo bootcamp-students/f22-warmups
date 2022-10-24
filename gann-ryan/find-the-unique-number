@@ -1,0 +1,19 @@
+let smallestNum
+function findUniq(arr) {
+  console.log('arr', arr)
+  // do magic
+  let fart = arr
+  if (fart[0] === fart[1]) {
+    let smallestNum = fart.find(element => element != fart[0])
+    console.log('smallestnum', smallestNum)
+    return smallestNum
+  } else if (fart[1] === fart[2]) {
+    let smallestNum = fart.find(element => element != fart[1])
+    console.log('smallestnum', smallestNum)
+    return smallestNum
+  } else if (fart[0] === fart[2]) {
+    let smallestNum = fart.find(element => element != fart[2])
+    return smallestNum
+  }
+ 
+}
