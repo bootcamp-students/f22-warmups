@@ -1,0 +1,30 @@
+// complete the method which returns the number which is most frequent in the given array
+// if there is a tie, return the largest among them
+// sort the array descending
+// run a for loop of the sorted array
+// use a conditional
+// increment and reset count based on conditional
+
+
+function highestRank(arr){
+console.log(arr)
+let sorted = arr.sort(function(a, b){return b - a})
+
+let count = 0
+let max = 0;
+let result;
+  
+for(let i=0; i<sorted.length; i++){
+  if(sorted[i] == sorted[i + 1]){
+    count++
+  }
+  else{ 
+    count = 0;
+  }
+    if(count > max){
+      result = sorted[i]
+      max = count
+    }      
+}  
+return result;
+}
