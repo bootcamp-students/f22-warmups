@@ -1,0 +1,17 @@
+function pigIt(str){
+  let strArr = str.split(" ")
+  let result = []
+  for (let i = 0; i<strArr.length; i++){
+    if (strArr[i].includes('!') || strArr[i].includes('?')){
+      result.push(strArr[i])
+    }
+    else{
+    
+    let first = strArr[i].charAt(0)
+    let second = strArr[i].substring(1)
+
+    result.push(second + first + 'ay')
+      }
+  }
+  return result.join(' ')
+}
