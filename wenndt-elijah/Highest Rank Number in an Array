@@ -1,0 +1,21 @@
+function highestRank(arr){
+  let newArr = arr.sort(function(a, b){return b-a})
+  console.log(newArr)
+  let count = 0
+  let max = 0
+  let result;
+  for (let i = 0; i<newArr.length; i++){
+    if(newArr[i]==newArr[i+1]){
+      count++
+    }
+    else (
+    count = 0
+    )
+    if (count>max){
+      result = newArr[i]
+      max = count
+    }
+    
+  }
+  return result
+}
