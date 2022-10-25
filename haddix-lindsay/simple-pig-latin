@@ -1,0 +1,20 @@
+  let returnString = "";
+  
+  let latinArray = str.split(" ");
+  console.log(latinArray);''
+  
+  latinArray.forEach(word => {
+    if (word.includes("?") || word.includes("!")) {
+       returnString = returnString + word + " ";
+      return;
+    }
+    let hold = word.slice(0,1);
+    word = word.slice(1);
+    word = word + hold + "ay";
+    console.log(word);
+    returnString = returnString + word + " ";
+  })
+  returnString = returnString.slice(0, returnString.length-1);
+  console.log(returnString);
+  return returnString;
+}
