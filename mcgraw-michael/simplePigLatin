@@ -1,0 +1,21 @@
+function pigIt(str){
+  let subStr ;
+  let newStr = [];
+  str.split(' ').forEach(word => {
+   subStr = word.split('')
+    subStr.push(subStr.shift())
+    subStr = subStr.join('');
+    console.log(subStr)
+    newStr.push(subStr)
+  })
+  newStr = newStr.join('ay ')
+  console.log(newStr)
+  if (newStr.includes('!')) {
+    return newStr
+  } else if (newStr.includes('?')) {
+    return newStr
+  } else { 
+    return newStr+'ay'
+  }
+  
+}
