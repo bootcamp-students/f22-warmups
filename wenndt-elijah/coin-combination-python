@@ -1,0 +1,19 @@
+import math
+
+def coin_combo(cents):
+    
+    cent_remainder = cents
+    
+    quarters = cent_remainder // 25
+    cent_remainder = cent_remainder - (quarters * 25)
+    
+    dimes = cent_remainder // 10
+    cent_remainder = cent_remainder - (dimes * 10)
+    
+    nickels = cent_remainder // 5
+    cent_remainder = cent_remainder - (nickels * 5)
+    
+    pennies = math.floor(cent_remainder)
+    cent_remainder = cent_remainder - (pennies)
+    
+    return [pennies, nickels, dimes, quarters]
