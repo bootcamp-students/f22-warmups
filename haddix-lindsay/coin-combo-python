@@ -1,0 +1,10 @@
+def coin_combo(cents):
+    coins = [0,0,0,0,]
+    coins[3] = cents //25
+    cents = cents - coins[3]*25
+    coins[2] = cents //10
+    cents = cents - coins[2]*10
+    coins[1] = cents //5
+    cents = cents - coins[1]*5
+    coins[0] = cents
+    return coins
