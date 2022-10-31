@@ -1,0 +1,4 @@
+import math
+def century(year):
+    calcYear = math.ceil(year/100)
+    return calcYear
