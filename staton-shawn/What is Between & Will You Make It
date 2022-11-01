@@ -1,0 +1,26 @@
+What is Between
+
+function between(a, b) {
+  // your code here
+//find numbers between index[0] and last index
+  // if a increments up stop at b
+   let range = [];
+
+    for (let i = a; i<=b; i++){
+      range.push(i);
+    }return range;
+  }
+
+//Will you make it?
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  // TODO
+  // 50mi 25mpg 2gal 
+  //2*25=50
+  //gal*mpg=mi
+  if (fuelLeft * mpg >= distanceToPump){
+    return true;
+  }else {
+    return false;
+  }
+};
