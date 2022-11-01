@@ -1,0 +1,2 @@
+SELECT * from companies
+ORDER BY employees DESC;
