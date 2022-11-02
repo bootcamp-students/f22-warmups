@@ -1,0 +1,3 @@
+SELECT NAME, author, copies_sold 
+FROM books 
+ORDER by copies_sold DESC LIMIT 5;
