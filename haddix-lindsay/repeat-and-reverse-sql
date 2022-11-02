@@ -1,0 +1,5 @@
+SELECT
+  concat(name, name, name) AS name,
+  reverse(characteristics) AS characteristics
+FROM
+  monsters;
