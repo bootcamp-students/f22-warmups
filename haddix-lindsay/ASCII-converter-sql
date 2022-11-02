@@ -1,0 +1,2 @@
+SELECT ASCII(name) AS name, ASCII(race) as race, id, birthday
+FROM demographics;
