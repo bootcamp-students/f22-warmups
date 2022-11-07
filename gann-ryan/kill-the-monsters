@@ -1,0 +1,11 @@
+def kill_monsters(health, monsters, damage):
+    if (monsters / 3).is_integer() == True:
+        monsters = (monsters - 1)
+    print(f"there are {monsters} monsters")
+    doneDmg = ((monsters // 3) * damage)
+    print('dmg', doneDmg)
+    leftHp = health - doneDmg
+    hits = (monsters // 3)
+    if leftHp < 1:
+        return "hero died"
+    else: return f"hits: {hits}, damage: {doneDmg}, health: {leftHp}"
