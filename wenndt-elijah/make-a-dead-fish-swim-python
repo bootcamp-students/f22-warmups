@@ -1,0 +1,13 @@
+def parse(data):
+    return_arr = []
+    value = 0
+    for x in data:
+        if x == 'i':
+            value +=1
+        elif x == 'd':
+            value -= 1
+        elif x == 's':
+            value *= value
+        elif x== 'o':
+            return_arr.append(value)
+    return return_arr
