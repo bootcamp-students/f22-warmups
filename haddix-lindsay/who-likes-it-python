@@ -1,0 +1,18 @@
+def likes(names):
+    if (len(names) == 0):
+        zero_message = 'no one likes this'
+        print(zero_message)
+        return zero_message
+    elif (len(names) == 1):
+        one_message = names[0] + ' likes this'
+        return one_message
+    elif (len(names) == 2):
+        two_message = names[0] + ' and ' + names[1] + ' like this'
+        return two_message
+    elif (len(names) == 3):
+        three_message = names[0] + ', ' + names[1] + ' and ' + names[2] + ' like this'
+        return three_message
+    elif (len(names) >= 4):
+        four_plus_message = names[0] + ', ' + names[1] + ' and ' + (str(len(names) - 2)) + ' others like this'
+        return four_plus_message
+    pass
