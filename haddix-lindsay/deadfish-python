@@ -1,0 +1,14 @@
+def parse(data):
+    print(data)
+    value = 0
+    new_array = []
+    for x in data:
+        if x == 'i':
+            value = value +1
+        elif x == 'd':
+            value = value -1
+        elif x == 's':
+            value = value * value
+        elif x == 'o':
+            new_array.append(value)
+    return new_array
