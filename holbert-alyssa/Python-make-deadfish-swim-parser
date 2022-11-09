@@ -1,0 +1,19 @@
+def parse(data):
+    
+    value = 0
+    outputList = []
+
+    for char in data:
+        if char == 'i':
+            value = value + 1
+        elif char == 'd':
+            value = value -1
+        elif char == 's':
+            value = value **2
+        elif char == 'o':
+            outputList.append(value)
+    
+    return(outputList)
+
+
+
