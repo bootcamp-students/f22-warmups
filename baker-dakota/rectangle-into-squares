@@ -1,0 +1,13 @@
+import math
+def sq_in_rect(lng, wdth):
+    arr = []
+    if lng == wdth:
+        return None
+    while lng > 0 and wdth > 0:
+        if lng > wdth:
+            arr.append(wdth)
+            lng -= wdth
+        else:
+            arr.append(lng)
+            wdth -= lng
+    return arr
