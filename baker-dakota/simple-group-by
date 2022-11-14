@@ -1,0 +1,3 @@
+-- Create your SELECT statement here
+SELECT age, COUNT(id) as people_count from people
+GROUP BY age
