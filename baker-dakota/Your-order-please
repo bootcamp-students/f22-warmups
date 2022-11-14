@@ -1,0 +1,26 @@
+//push to array
+//set empty array
+//loop through array 
+//split each index of array into own array
+//find number and set it to a variable
+//push to empty array and parse number from string to int
+//sort based on second index of array which is the number
+//map array and remove the index containing just the number
+//join to string
+function order(words) {
+  const findNumber = words.match(/[1-9]/g);
+  let arr = words.split(' ');
+  let empty = [];
+
+    arr.forEach(word=>{
+    let x = word.split('')
+    let num = x.find(el=>parseInt(el))
+    console.log(num)
+    empty.push([word,parseInt(num)]) 
+  })
+  console.log(empty)
+ empty.sort((a, b) => a[1]- b[1]).map(el => el.splice(1, 1));
+  
+ let final = empty.join(' ');
+return final;
+  }
