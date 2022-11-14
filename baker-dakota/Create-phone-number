@@ -1,0 +1,11 @@
+//set number template
+//for each item
+//replace x with item
+//return template
+function createPhoneNumber(numbers){
+  let template =  '(xxx) xxx-xxxx'
+  numbers.forEach((el) => {
+    template = template.replace('x', el);
+  })
+  return template;
+}
