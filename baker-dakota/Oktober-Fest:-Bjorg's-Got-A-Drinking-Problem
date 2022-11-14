@@ -1,0 +1,9 @@
+function gameOfFives(bavarianBeerBears,scandinavianSchöllers){
+const bav = bavarianBeerBears.filter((el) => el === 5).length;
+const scand = scandinavianSchöllers.filter((el) => el === 5).length
+if (bav === scand) {
+  return "Drinks All Round! Free Beers on Bjorg!"
+} else if (bav !== scand) {
+  return "Uh Oh! Bjorg's a donut! No beer for anyone!"
+}
+}
