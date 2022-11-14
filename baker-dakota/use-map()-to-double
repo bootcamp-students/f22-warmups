@@ -1,0 +1,4 @@
+function double(array) {
+ const doubled = array.map((el) => el * 2);
+ return doubled;
+}
