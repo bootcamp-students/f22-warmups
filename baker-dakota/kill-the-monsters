@@ -1,0 +1,10 @@
+def kill_monsters(health, monsters, damage):
+    hits = (monsters -1) // 3
+    damage = hits * damage
+    health = health - damage
+    print(hits, damage, health)
+    if health > 0:
+        return f"hits: {hits}, damage: {damage}, health: {health}"
+    else: 
+        return "hero died"
+   
