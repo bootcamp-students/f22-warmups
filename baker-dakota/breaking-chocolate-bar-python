@@ -1,0 +1,7 @@
+def break_chocolate(n, m):
+    bar = n * m
+    breaks = bar - 1
+    if breaks - 1 <= 0:
+        return 0
+    else: 
+        return breaks
