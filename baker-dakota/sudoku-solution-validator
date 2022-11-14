@@ -1,0 +1,44 @@
+def valid_solution(board):
+    for i in board:
+        if 0 in i:
+            return False
+    if not board:
+        return False
+    
+    hset = set()
+    for i in range(9):
+        for j in range(9):
+            if board[i][j] in hset:
+                return False
+            else:
+                hset.add(board[i][j])
+        hset = set()
+            
+    
+    hset = set()
+    for i in range(9):
+        for j in range(9):
+            if board[j][i] in hset:
+                return False
+            else:
+                hset.add(board[j][i])
+        hset = set()
+    
+    
+    
+    subs = [range(0,3), range(3,6), range(6,9)]
+    subgrids = [] 
+    for x in subs:
+        for y in subs:
+            subgrids.append([x,y])
+    for (row_range, column_range) in subgrids:
+        hset = set()
+        for i in row_range:
+            for j in column_range:              
+                if board[i][j] in hset:
+                    return False
+                else:
+                    hset.add(board[i][j])
+    
+    return True
+        
