@@ -1,0 +1,29 @@
+//order from highest to lowest
+//set empty object
+//push to object with key being number and value being how many times it appears
+//set max value
+//set variable for key to return
+//loop through object
+//if value is greater than max value then max value equals the object value
+//return max item
+function highestRank(arr){
+  let count = {};
+  let maxval = 0;
+  let max = '';
+for (const element of arr)  {
+  if (count[element]) {
+    count[element] +=1
+  } else {
+    count[element] = 1
+  }
+  }
+  
+for(let item in count){
+  if(count[item]>= maxval){
+    maxval = count[item];
+    max= item
+  }
+}
+  return parseInt(max);
+
+}
