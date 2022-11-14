@@ -1,0 +1,14 @@
+function pigIt(str){
+let word = str.split(' ');
+let final = []
+newitem = ''
+for (let item of word) {
+  if (item.includes('!') || item.includes('?')) {
+    newitem = item
+    } else {
+ newitem = item.substring(1) + item[0] + 'ay'
+  }
+  final.push(newitem)
+}
+ return final.join(' ')
+  }
