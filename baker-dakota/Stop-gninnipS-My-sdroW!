@@ -1,0 +1,20 @@
+//push to array
+//map array
+//check if index >= 5
+//if true split.reverse.join
+//else el index equals 
+
+function spinWords(string){
+ let arr = string.split(' ');
+  let final = '';
+  console.log(arr)
+  arr.map((el, i) => {
+    if (el.length >= 5) {
+      arr[i] = el.split('').reverse().join('');
+    } else {
+      arr[i] = el;
+    }
+    final = arr.join(' ');
+  })
+  return final;
+}
