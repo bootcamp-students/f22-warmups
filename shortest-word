@@ -1,4 +1,0 @@
-def find_short(s):
-    li = list(s.split(' '))
-    result = min(li, key = len)
-    return len(result)
