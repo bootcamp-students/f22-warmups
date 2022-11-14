@@ -1,0 +1,26 @@
+//split into string with each letter as index
+//for each and for loop checking if element is equal to next index
+//if not equal push el to empty array
+//return empty
+var uniqueInOrder=function(iterable){
+  let empty = []
+  
+  console.log(iterable)
+  if (Array.isArray(iterable)) {
+      for(let i = 0; i < iterable.length; i++) {
+     if (iterable[i] !== iterable[i + 1]) {
+       empty.push(iterable[i]);
+     }
+   }
+  } else {
+ let split = iterable.split('');
+  console.log(split)
+
+   for(let i = 0; i < split.length; i++) {
+     if (split[i] !== split[i + 1]) {
+       empty.push(split[i]);
+       }
+     }
+   }
+  return empty;
+}
