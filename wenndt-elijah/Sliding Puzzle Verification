@@ -1,0 +1,11 @@
+def is_solved(board):
+    blanklist = []
+    sortedblanklist =[]
+    for row in board:
+        for col in row:
+                blanklist.append(col)
+                sortedblanklist.append(col)
+    if blanklist == sorted(sortedblanklist):
+        return True
+    else:
+        return False
