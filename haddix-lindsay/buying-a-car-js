@@ -1,0 +1,20 @@
+function nbMonths(startPriceOld, startPriceNew, savingperMonth, percentLossByMonth){
+  
+  savings = 0;
+  month = 1;
+  depreciatedOld = startPriceOld;
+  depreciatedNew = startPriceNew;
+  loss = percentLossByMonth;
+  
+  while (savings + depreciatedOld < depreciatedNew) {
+    if (month%2 == 0) {
+      loss = loss + 0.5;
+    }
+    depreciatedOld = (depreciatedOld-(depreciatedOld*(loss/100)));
+    depreciatedNew = (depreciatedNew-(depreciatedNew*(loss/100)));
+    savings = month * savingperMonth;
+    month = month+1;
+    }
+  
+  return([month-1, Math.round((depreciatedOld+savings)-depreciatedNew)])
+}
