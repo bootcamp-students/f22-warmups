@@ -3,30 +3,17 @@ def good_vs_evil(good, evil):
     evil_list = evil.split()
     good_list = list(map(int, good_list))
     evil_list = list(map(int, evil_list))
+    g_mod = [1, 2, 3, 3, 4, 10]
+    e_mod = [1, 2, 2, 2, 3, 5, 10]
     
-    if good_list[1] > 0:
-        good_list[1] *= 2
-    elif good_list[2] > 0:
-        good_list[2] *= 3
-    elif good_list[3] > 0:
-        good_list[3] *= 3
-    elif good_list[4] > 0:
-        good_list[4] *= 4
-    elif good_list[5] > 0:
-        good_list[5] *= 10
-        
-    if evil_list[1] > 0:
-        evil_list[1] *= 2
-    elif evil_list[2] > 0:
-        evil_list[2] *= 2
-    elif evil_list[3] > 0:
-        evil_list[3] *= 2
-    elif evil_list[4] > 0:
-        evil_list[4] *= 3
-    elif evil_list[5] > 0:
-        evil_list[5] *= 5
-    elif evil_list[6] > 0:
-        evil_list[6] *= 10
+    for i in range(len(good_list)):
+        if good_list[i] > 0:
+            good_list *= g_mod[i]
+            
+    for i in range(len(evil_list)):
+        if evil_list[i] > 0:
+            evil_list *= e_mod[i]
+            
     if sum(good_list) > sum(evil_list):
         return "Battle Result: Good triumphs over Evil"
     elif sum(good_list) < sum(evil_list):
