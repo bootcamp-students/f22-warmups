@@ -1,0 +1,11 @@
+// Returns number of complete beeramid levels
+var beeramid = function(bonus, price) {
+  canCount = Number(bonus/price);
+  console.log(canCount);
+  let level = 0;
+  while((level+1)**2 <= canCount){
+        level = level + 1;
+        canCount = canCount - (level*level);
+    }
+    return level;
+}
