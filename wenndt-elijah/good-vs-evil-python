@@ -8,11 +8,12 @@ def good_vs_evil(good, evil):
     
     for i in range(len(good_list)):
         if good_list[i] > 0:
-            good_list *= g_mod[i]
+            good_list[i] *= g_mod[i]
+        print(good_list)
             
     for i in range(len(evil_list)):
         if evil_list[i] > 0:
-            evil_list *= e_mod[i]
+            evil_list[i] *= e_mod[i]
             
     if sum(good_list) > sum(evil_list):
         return "Battle Result: Good triumphs over Evil"
